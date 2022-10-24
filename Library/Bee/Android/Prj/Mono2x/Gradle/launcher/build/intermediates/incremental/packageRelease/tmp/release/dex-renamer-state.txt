@@ -1,0 +1,4 @@
+#Fri Oct 14 09:28:55 WAT 2022
+base.0=/home/samuel/gameup_africa_3d/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build/intermediates/dex/release/mergeDexRelease/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
