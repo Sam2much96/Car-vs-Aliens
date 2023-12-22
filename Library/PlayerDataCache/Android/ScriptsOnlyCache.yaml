@@ -14,6 +14,8 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    Unity.Timeline.Editor.dll:
+    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -21,8 +23,10 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
   serializedClasses:
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
@@ -47,7 +51,12 @@ ScriptsOnlyBuild:
     - UnityEngine.TextCore.GlyphMetrics
     - UnityEngine.TextCore.GlyphRect
     UnityEngine.UI:
+    - UnityEngine.UI.AnimationTriggers
+    - UnityEngine.UI.Button/ButtonClickedEvent
+    - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+    - UnityEngine.UI.Navigation
+    - UnityEngine.UI.SpriteState
   methodsToPreserve: []
   sceneClasses:
     Assets/Scenes/Prototype 1.unity:
@@ -90,38 +99,44 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2210}
+      Script: {instanceID: 1596}
     - Class: 114
-      Script: {instanceID: 2644}
+      Script: {instanceID: 2218}
     - Class: 114
-      Script: {instanceID: 2870}
+      Script: {instanceID: 2652}
     - Class: 114
-      Script: {instanceID: 4172}
+      Script: {instanceID: 2880}
     - Class: 114
-      Script: {instanceID: 4240}
+      Script: {instanceID: 3182}
     - Class: 114
-      Script: {instanceID: 4510}
+      Script: {instanceID: 4184}
     - Class: 114
-      Script: {instanceID: 4582}
+      Script: {instanceID: 4252}
     - Class: 114
-      Script: {instanceID: 5124}
+      Script: {instanceID: 4522}
     - Class: 114
-      Script: {instanceID: 5282}
+      Script: {instanceID: 4594}
     - Class: 114
-      Script: {instanceID: 5898}
+      Script: {instanceID: 5140}
     - Class: 114
-      Script: {instanceID: 5964}
+      Script: {instanceID: 5306}
     - Class: 114
-      Script: {instanceID: 6052}
+      Script: {instanceID: 5692}
     - Class: 114
-      Script: {instanceID: 6398}
+      Script: {instanceID: 5926}
     - Class: 114
-      Script: {instanceID: 24106}
+      Script: {instanceID: 5992}
+    - Class: 114
+      Script: {instanceID: 6080}
+    - Class: 114
+      Script: {instanceID: 6426}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
@@ -460,6 +475,12 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
+      Hash: c0884af2482d9cd7c335ca6bb14a1afa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: wallet
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -478,7 +499,7 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 337f3f0c9c3b2b7060a632e0c0e66e4a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -550,7 +571,7 @@ ScriptsOnlyBuild:
     className: rotate_propeller
   - hash:
       serializedVersion: 2
-      Hash: 3cca61b7d430ec4bc4546edfbb42dee5
+      Hash: 41446ac18e61c4cb0034faef21f8f6da
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Enemy
@@ -608,6 +629,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StartSampleScene
   - hash:
       serializedVersion: 2
       Hash: 3bea228b2e32557a9fcf818a6a040d75
@@ -682,6 +709,12 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
+      Hash: 650348f64284969f84a2d02a975a1c01
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AlgorandManager
+  - hash:
+      serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
     assemblyName: Unity.VisualScripting.State.dll
     namespaceName: Unity.VisualScripting
@@ -700,7 +733,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: b1f70f0e2cb30e45a3b9eb57b4af6c6d
+      Hash: 2773f53ec767bde2a51e2f4345085ce7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: car
@@ -956,25 +989,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 966de2b6c1bfa8ff01b6e417100bb3b3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AlgorandManager
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: StartSampleScene
-  - hash:
-      serializedVersion: 2
-      Hash: c0884af2482d9cd7c335ca6bb14a1afa
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: wallet
   platform: 13
   scenePathNames:
   - Assets/Scenes/Prototype 1.unity
-  playerPath: /home/samuel/gameup_africa_3d/test/test.apk
+  playerPath: /home/samuel/cars-vs-aliens-testing2.aab
