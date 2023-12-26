@@ -779,6 +779,7 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Build: 1
     UNet: 1
   luminIcon:
     m_Name: 
@@ -793,11 +794,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 
+  cloudProjectId: 00cfa0b6-d129-4c17-81fc-bd6957c06e80
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: Car-vs-Aliens
+  organizationId: inhumanity_studios
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 

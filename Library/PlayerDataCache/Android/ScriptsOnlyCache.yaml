@@ -14,8 +14,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    Unity.Timeline.Editor.dll:
-    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -99,37 +97,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1596}
+      Script: {instanceID: 1598}
     - Class: 114
-      Script: {instanceID: 2218}
+      Script: {instanceID: 2220}
     - Class: 114
-      Script: {instanceID: 2652}
+      Script: {instanceID: 2654}
     - Class: 114
-      Script: {instanceID: 2880}
+      Script: {instanceID: 2882}
     - Class: 114
-      Script: {instanceID: 3182}
+      Script: {instanceID: 3184}
     - Class: 114
-      Script: {instanceID: 4184}
+      Script: {instanceID: 4186}
     - Class: 114
-      Script: {instanceID: 4252}
+      Script: {instanceID: 4254}
     - Class: 114
-      Script: {instanceID: 4522}
+      Script: {instanceID: 4524}
     - Class: 114
-      Script: {instanceID: 4594}
+      Script: {instanceID: 4596}
     - Class: 114
-      Script: {instanceID: 5140}
+      Script: {instanceID: 5142}
     - Class: 114
-      Script: {instanceID: 5306}
+      Script: {instanceID: 5308}
     - Class: 114
-      Script: {instanceID: 5692}
+      Script: {instanceID: 5694}
     - Class: 114
-      Script: {instanceID: 5926}
+      Script: {instanceID: 5928}
     - Class: 114
-      Script: {instanceID: 5992}
+      Script: {instanceID: 5994}
     - Class: 114
-      Script: {instanceID: 6080}
+      Script: {instanceID: 6082}
     - Class: 114
-      Script: {instanceID: 6426}
+      Script: {instanceID: 6428}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
