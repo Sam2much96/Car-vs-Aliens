@@ -1,4 +1,6 @@
 # ignore ALL files in ANY directory named android
+/Library/Bee
 /Library/Artifacts
 /Library/PackageCache
 /Library/ScriptAssemblies
+/Library
