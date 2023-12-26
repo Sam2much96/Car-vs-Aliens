@@ -1,2 +1,3 @@
 # ignore ALL files in ANY directory named android
 /Library/Artifacts
+Library/PackageCache
